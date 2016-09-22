@@ -20,6 +20,7 @@ import NewGroup from './containers/NewGroup';
 import EditCollective from './containers/EditCollective';
 import GroupTierList from './containers/GroupTierList';
 import Response from './containers/Response';
+import Settings from './containers/Settings';
 
 import { requireAuthentication } from './components/AuthenticatedComponent';
 
@@ -45,6 +46,7 @@ export default (
     <Route path="/:slug/connect/:provider" component={ConnectProvider} />
     <Route path="/:slug/edit-twitter" component={EditTwitter} />
     <Route path="/:slug/edit" component={EditCollective} />
+    <Route path="/:slug/settings" component={Settings} />
     <Route path="/:slug" component={PublicPage} />
     <Route path="/:slug/expenses/new" component={Transactions} />
     <Route path="/:slug/:type(donations|expenses)" component={Transactions} />
